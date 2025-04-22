@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "IosevkaTerm Nerd Font Mono:pixelsize=20";
-static char *font2[] = { "Noto Color Emoji:pixelsize=18", };
+static char *font = "IosevkaTerm Nerd Font Mono:pixelsize=12";
+static char *font2[] = { "Noto Color Emoji:pixelsize=9", };
 static int borderpx = 2;
 
 /*
@@ -112,26 +112,26 @@ float alpha = 0.70;
 
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
-    /* 8 normal colors */
-    [0] = "#000000", /* black       */
-    [1] = "#FF4455", /* red         */
-    [2] = "#9FFF92", /* green       */
-    [3] = "#FFD580", /* yellow      */
-    [4] = "#4C9EFF", /* blue        */
-    [5] = "#B285FF", /* magenta     */
-    [6] = "#85FFFF", /* cyan        */
-    [7] = "#FFFFFF", /* white       */
+  /* 8 normal colors */
+  [0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+  [1] = "#ea6962", /* red     */
+  [2] = "#a9b665", /* green   */
+  [3] = "#d8a657", /* yellow  */
+  [4] = "#7daea3", /* blue    */
+  [5] = "#d3869b", /* magenta */
+  [6] = "#89b482", /* cyan    */
+  [7] = "#d4be98", /* white   */
 
-    [8] = "#1F2C41", /* black-bright    */
-    [9] = "#FF4CF0", /* red-bright      */
-    [10] = "#A7FFB5", /* green-bright    */
-    [11] = "#FFE7A9", /* yellow-bright   */
-    [12] = "#6ACFFF", /* blue-bright     */
-    [13] = "#D1ACFF", /* magenta-bright  */
-    [14] = "#A7F5F5", /* cyan-bright     */
-    [15] = "#FFFFFF", /* white-bright    */
+  /* 8 bright colors */
+  [8]  = "#928374", /* black   */
+  [9]  = "#ef938e", /* red     */
+  [10] = "#bbc585", /* green   */
+  [11] = "#e1bb7e", /* yellow  */
+  [12] = "#9dc2ba", /* blue    */
+  [13] = "#e1acbb", /* magenta */
+  [14] = "#a7c7a2", /* cyan    */
+  [15] = "#e2d3ba", /* white   */
 };
-
 
 
 /*
